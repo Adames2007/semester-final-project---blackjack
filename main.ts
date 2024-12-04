@@ -1,4 +1,4 @@
-function create_dealer_card (first: boolean) {
+function create_dealer_card (first: boolean, num: number) {
     if (first == false) {
         card_number = card_number_list[randint(0, 12)]
         if (card_number == 11) {
@@ -564,13 +564,11 @@ function create_dealer_card (first: boolean) {
                     `, SpriteKind.Player)
             }
         }
-        if (first) {
-            dealer_card.setPosition(180, 92)
-            dealer_card.setVelocity(-2000, 0)
-            pause(200)
-            dealer_card.setVelocity(0, 0)
-            dealer_card.setPosition(100, 92)
-        }
+        dealer_card.setPosition(180, 27)
+        dealer_card.setVelocity(-2000, 0)
+        pause(200)
+        dealer_card.setVelocity(0, 0)
+        dealer_card.setPosition(100, 27)
     } else {
         card_number = card_number_list[randint(0, 12)]
         dealer_card = sprites.create(img`
@@ -616,11 +614,11 @@ function create_dealer_card (first: boolean) {
             ...eeeeeeeeeeeeeeeeeeeee...
             `, SpriteKind.Player)
         if (first) {
-            dealer_card.setPosition(180, 92)
-            dealer_card.setVelocity(-2000, 0)
+            dealer_card.setPosition(180, 27)
+            dealer_card.setVelocity(-2000 + 20 * num, 0)
             pause(200)
             dealer_card.setVelocity(0, 0)
-            dealer_card.setPosition(100, 92)
+            dealer_card.setPosition(80 + 20 * num, 27)
         }
     }
 }
@@ -630,7 +628,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 function create_card (num: number) {
     card_number = card_number_list[randint(0, 12)]
     if (card_number == 11) {
-        player_card_1 = sprites.create(img`
+        player_card = sprites.create(img`
             ...eeeeeeeeeeeeeeeeeeeee...
             ..e111111111111111111111e..
             .e111eeeeeeeeeeeeeeeee111e.
@@ -673,7 +671,7 @@ function create_card (num: number) {
             ...eeeeeeeeeeeeeeeeeeeee...
             `, SpriteKind.Player)
     } else if (card_number == 2) {
-        player_card_1 = sprites.create(img`
+        player_card = sprites.create(img`
             ...eeeeeeeeeeeeeeeeeeeee...
             ..e111111111111111111111e..
             .e111eeeeeeeeeeeeeeeee111e.
@@ -716,7 +714,7 @@ function create_card (num: number) {
             ...eeeeeeeeeeeeeeeeeeeee...
             `, SpriteKind.Player)
     } else if (card_number == 3) {
-        player_card_1 = sprites.create(img`
+        player_card = sprites.create(img`
             ...eeeeeeeeeeeeeeeeeeeee...
             ..e111111111111111111111e..
             .e111eeeeeeeeeeeeeeeee111e.
@@ -759,7 +757,7 @@ function create_card (num: number) {
             ...eeeeeeeeeeeeeeeeeeeee...
             `, SpriteKind.Player)
     } else if (card_number == 4) {
-        player_card_1 = sprites.create(img`
+        player_card = sprites.create(img`
             ...eeeeeeeeeeeeeeeeeeeee...
             ..e111111111111111111111e..
             .e111eeeeeeeeeeeeeeeee111e.
@@ -802,7 +800,7 @@ function create_card (num: number) {
             ...eeeeeeeeeeeeeeeeeeeee...
             `, SpriteKind.Player)
     } else if (card_number == 5) {
-        player_card_1 = sprites.create(img`
+        player_card = sprites.create(img`
             ...eeeeeeeeeeeeeeeeeeeee...
             ..e111111111111111111111e..
             .e111eeeeeeeeeeeeeeeee111e.
@@ -845,7 +843,7 @@ function create_card (num: number) {
             ...eeeeeeeeeeeeeeeeeeeee...
             `, SpriteKind.Player)
     } else if (card_number == 6) {
-        player_card_1 = sprites.create(img`
+        player_card = sprites.create(img`
             ...eeeeeeeeeeeeeeeeeeeee...
             ..e111111111111111111111e..
             .e111eeeeeeeeeeeeeeeee111e.
@@ -888,7 +886,7 @@ function create_card (num: number) {
             ...eeeeeeeeeeeeeeeeeeeee...
             `, SpriteKind.Player)
     } else if (card_number == 7) {
-        player_card_1 = sprites.create(img`
+        player_card = sprites.create(img`
             ...eeeeeeeeeeeeeeeeeeeee...
             ..e111111111111111111111e..
             .e111eeeeeeeeeeeeeeeee111e.
@@ -931,7 +929,7 @@ function create_card (num: number) {
             ...eeeeeeeeeeeeeeeeeeeee...
             `, SpriteKind.Player)
     } else if (card_number == 8) {
-        player_card_1 = sprites.create(img`
+        player_card = sprites.create(img`
             ...eeeeeeeeeeeeeeeeeeeee...
             ..e111111111111111111111e..
             .e111eeeeeeeeeeeeeeeee111e.
@@ -974,7 +972,7 @@ function create_card (num: number) {
             ...eeeeeeeeeeeeeeeeeeeee...
             `, SpriteKind.Player)
     } else if (card_number == 9) {
-        player_card_1 = sprites.create(img`
+        player_card = sprites.create(img`
             ...eeeeeeeeeeeeeeeeeeeee...
             ..e111111111111111111111e..
             .e111eeeeeeeeeeeeeeeee111e.
@@ -1019,7 +1017,7 @@ function create_card (num: number) {
     } else if (card_number == 10) {
         _10_j_q_k = randint(0, 3)
         if (_10_j_q_k == 0) {
-            player_card_1 = sprites.create(img`
+            player_card = sprites.create(img`
                 ...eeeeeeeeeeeeeeeeeeeee...
                 ..e111111111111111111111e..
                 .e111eeeeeeeeeeeeeeeee111e.
@@ -1062,7 +1060,7 @@ function create_card (num: number) {
                 ...eeeeeeeeeeeeeeeeeeeee...
                 `, SpriteKind.Player)
         } else if (_10_j_q_k == 1) {
-            player_card_1 = sprites.create(img`
+            player_card = sprites.create(img`
                 ...eeeeeeeeeeeeeeeeeeeee...
                 ..e111111111111111111111e..
                 .e111eeeeeeeeeeeeeeeee111e.
@@ -1105,7 +1103,7 @@ function create_card (num: number) {
                 ...eeeeeeeeeeeeeeeeeeeee...
                 `, SpriteKind.Player)
         } else if (_10_j_q_k == 2) {
-            player_card_1 = sprites.create(img`
+            player_card = sprites.create(img`
                 ...eeeeeeeeeeeeeeeeeeeee...
                 ..e111111111111111111111e..
                 .e111eeeeeeeeeeeeeeeee111e.
@@ -1148,7 +1146,7 @@ function create_card (num: number) {
                 ...eeeeeeeeeeeeeeeeeeeee...
                 `, SpriteKind.Player)
         } else if (_10_j_q_k == 3) {
-            player_card_1 = sprites.create(img`
+            player_card = sprites.create(img`
                 ...eeeeeeeeeeeeeeeeeeeee...
                 ..e111111111111111111111e..
                 .e111eeeeeeeeeeeeeeeee111e.
@@ -1192,20 +1190,33 @@ function create_card (num: number) {
                 `, SpriteKind.Player)
         }
     }
-    player_card_1.setPosition(180, 92)
-    player_card_1.setVelocity(-2000, 0)
+    player_card.setPosition(180, 92)
+    player_card.setVelocity(-2000 + 20 * num, 0)
     pause(200)
-    player_card_1.setVelocity(0, 0)
-    player_card_1.setPosition(80 + 20 * num, 92)
+    player_card.setVelocity(0, 0)
+    player_card.setPosition(80 + 20 * num, 92)
 }
 function start_game () {
     if (can_start_game) {
         can_start_game = false
         create_card(0)
+        player_sum = card_number
         create_card(1)
+        player_sum += card_number
+        create_dealer_card(true, 0)
+        dealer_sum = card_number
+        create_dealer_card(false, 1)
+        dealer_sum += card_number
+        if (game.ask("Draw Card?")) {
+            create_card(2)
+        }
+        game.splash(dealer_sum)
+        game.splash(player_sum)
     }
 }
-let player_card_1: Sprite = null
+let dealer_sum = 0
+let player_sum = 0
+let player_card: Sprite = null
 let _10_j_q_k = 0
 let dealer_card: Sprite = null
 let card_number = 0
