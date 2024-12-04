@@ -1,4 +1,4 @@
-function create_dealer_card (num: number, first: boolean) {
+function create_dealer_card (first: boolean) {
     if (first == false) {
         card_number = card_number_list[randint(0, 12)]
         if (card_number == 11) {
