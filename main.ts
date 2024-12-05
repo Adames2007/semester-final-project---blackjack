@@ -1236,7 +1236,7 @@ function start_game () {
         draw_cards()
         pause(100)
         animation.runImageAnimation(
-        dealer_card,
+        hidden_dealer_card,
         [img`
             ...eeeeeeeeeeeeeeeeeeeee...
             ..e1e1e1e1e1e1e1e1e1e1e1e..
