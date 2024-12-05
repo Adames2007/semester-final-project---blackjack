@@ -571,7 +571,7 @@ function create_dealer_card (first: boolean, num: number) {
         dealer_card.setPosition(100, 27)
     } else {
         card_number = card_number_list[randint(0, 12)]
-        dealer_card = sprites.create(img`
+        hidden_dealer_card = sprites.create(img`
             ...eeeeeeeeeeeeeeeeeeeee...
             ..e1e1e1e1e1e1e1e1e1e1e1e..
             .e1e1eeeeeeeeeeeeeeeee1e1e.
@@ -614,18 +614,32 @@ function create_dealer_card (first: boolean, num: number) {
             ...eeeeeeeeeeeeeeeeeeeee...
             `, SpriteKind.Player)
         if (first) {
-            dealer_card.setPosition(180, 27)
-            dealer_card.setVelocity(-2000 + 20 * num, 0)
+            hidden_dealer_card.setPosition(180, 27)
+            hidden_dealer_card.setVelocity(-2000 + 20 * num, 0)
             pause(200)
-            dealer_card.setVelocity(0, 0)
-            dealer_card.setPosition(80 + 20 * num, 27)
+            hidden_dealer_card.setVelocity(0, 0)
+            hidden_dealer_card.setPosition(80 + 20 * num, 27)
         }
     }
 }
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     start_game()
 })
-function create_card (num: number) {
+function draw_cards () {
+    while (game.ask("Draw Card?")) {
+        create_card(2 + draws)
+        player_sum += card_number
+        draws += 1
+        if (player_sum > 21) {
+            game.splash("BUST!")
+            game.gameOver(false)
+        } else if (player_sum == 21) {
+            break;
+        }
+        pause(100)
+    }
+}
+function create_card (num2: number) {
     card_number = card_number_list[randint(0, 12)]
     if (card_number == 11) {
         player_card = sprites.create(img`
@@ -1191,10 +1205,17 @@ function create_card (num: number) {
         }
     }
     player_card.setPosition(180, 92)
-    player_card.setVelocity(-2000 + 20 * num, 0)
+    player_card.setVelocity(-2000 + 20 * num2, 0)
     pause(200)
     player_card.setVelocity(0, 0)
-    player_card.setPosition(80 + 20 * num, 92)
+    player_card.setPosition(80 + 20 * num2, 92)
+}
+function dealer_draw_cards () {
+    if (dealer_sum < player_sum) {
+        create_dealer_card(false, 2)
+    } else if (dealer_sum == player_sum && dealer_sum < 14) {
+        create_dealer_card(false, 2)
+    }
 }
 function start_game () {
     if (can_start_game) {
@@ -1207,16 +1228,121 @@ function start_game () {
         dealer_sum = card_number
         create_dealer_card(false, 1)
         dealer_sum += card_number
-        if (game.ask("Draw Card?")) {
-            create_card(2)
+        if (player_sum == 21) {
+            game.splash("BLACKJACK!")
         }
-        game.splash(dealer_sum)
-        game.splash(player_sum)
+        pause(100)
+        draws = 0
+        draw_cards()
+        pause(100)
+        animation.runImageAnimation(
+        dealer_card,
+        [img`
+            ...eeeeeeeeeeeeeeeeeeeee...
+            ..e1e1e1e1e1e1e1e1e1e1e1e..
+            .e1e1eeeeeeeeeeeeeeeee1e1e.
+            e1eeecb1111111111111bceee1e
+            ee1e1ecb1ebd111dbe1bce1e1ee
+            e1e111ecb1ebd1dbe1bce111e1e
+            eee1e11ecb1ebdbe1bce11e1eee
+            e1e1ce11ecb1ebe1bce11ec1e1e
+            eee1bce11ecb1e1bce11ecb1eee
+            e1e1dbce11ecb1bce11ecbd1e1e
+            eee11111111ecbce11111111eee
+            e1e111eee111ece111eee111e1e
+            eee11eddde11ded11eddde11eee
+            e1e11ed1de11ded11ed1de11e1e
+            eee111e1de11ded11ed1e111eee
+            e1e11bddde1deeed1edddb11e1e
+            eee1beeee11deced11eeeeb1eee
+            e1e1ee111ddeebeedd111ee1e1e
+            eee1e11ddeeeedeeeedd11e1eee
+            e1e1e1deeecbdddbceeed1e1e1e
+            e1e1e1deeecbdddbceeed1e1e1e
+            eee1e11ddeeeedeeeedd11e1eee
+            e1e1ee111ddeebeedd111ee1e1e
+            eee1beeee11deced11eeeeb1eee
+            e1e11bddde1deeed1edddb11e1e
+            eee111e1de11ded11ed1e111eee
+            e1e11ed1de11ded11ed1de11e1e
+            eee11eddde11ded11eddde11eee
+            e1e111eee111ece111eee111e1e
+            eee11111111ecbce11111111eee
+            e1e1dbce11ecb1bce11ecbd1e1e
+            eee1bce11ecb1e1bce11ecb1eee
+            e1e1ce11ecb1ebe1bce11ec1e1e
+            eee1e11ecb1ebdbe1bce11e1eee
+            e1e111ecb1ebd1dbe1bce111e1e
+            ee1e1ecb1ebd111dbe1bce1e1ee
+            e1eeecb1111111111111bceee1e
+            .e1e1eeeeeeeeeeeeeeeee1e1e.
+            ..e1e1e1e1e1e1e1e1e1e1e1e..
+            ...eeeeeeeeeeeeeeeeeeeee...
+            `,img`
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            ...........................
+            `],
+        500,
+        false
+        )
+        if (dealer_sum == 21) {
+            game.splash("BLACKJACK!")
+            game.gameOver(false)
+        }
+        dealer_draw_cards()
+        if (dealer_sum == player_sum) {
+            game.splash("Tie...")
+            game.reset()
+        } else if (dealer_sum > player_sum) {
+            game.gameOver(false)
+        } else if (dealer_sum < player_sum) {
+            game.gameOver(true)
+        }
     }
 }
 let dealer_sum = 0
-let player_sum = 0
 let player_card: Sprite = null
+let player_sum = 0
+let draws = 0
+let hidden_dealer_card: Sprite = null
 let _10_j_q_k = 0
 let dealer_card: Sprite = null
 let card_number = 0
