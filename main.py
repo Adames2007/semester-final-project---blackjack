@@ -659,36 +659,36 @@ def create_card(num2: number):
                             .e111eeeeeeeeeeeeeeeee111e.
                             e11ee11111111111111111ee11e
                             e11e1111111111111111111e11e
+                            e1e11e111111111111111111e1e
+                            e1e1e1e11111111111111111e1e
+                            e1e1eee11111111111111111e1e
+                            e1e1e1e11111111111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
-                            e1e11111111eeeee11111111e1e
-                            e1e1111111eeeeeee1111111e1e
+                            e1e111111111111111111111e1e
+                            e1e11111111e111e11111111e1e
+                            e1e1111111eee1eee1111111e1e
                             e1e111111eeeeeeeee111111e1e
-                            e1e11111eeeee1eeeee11111e1e
-                            e1e11111eeee111eeee11111e1e
-                            e1e1111eeee11111eeee1111e1e
-                            e1e1111eeee11111eeee1111e1e
-                            e1e1111eeeeeeeeeeeee1111e1e
-                            e1e1111eeeeeeeeeeeee1111e1e
-                            e1e1111eeeeeeeeeeeee1111e1e
-                            e1e1111eee1111111eee1111e1e
-                            e1e1111eee1111111eee1111e1e
-                            e1e1111eee1111111eee1111e1e
-                            e1e1111eee1111111eee1111e1e
+                            e1e111111eeeeeeeee111111e1e
+                            e1e111111eeeeeeeee111111e1e
+                            e1e1111111eeeeeee1111111e1e
+                            e1e11111111eeeee11111111e1e
+                            e1e111111111eee111111111e1e
+                            e1e1111111111e1111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
+                            e1e11111111111111111e1e1e1e
+                            e1e11111111111111111eee1e1e
+                            e1e11111111111111111e1e1e1e
+                            e1e111111111111111111e11e1e
                             e11e1111111111111111111e11e
                             e11ee11111111111111111ee11e
                             .e111eeeeeeeeeeeeeeeee111e.
@@ -703,27 +703,16 @@ def create_card(num2: number):
                             .e111eeeeeeeeeeeeeeeee111e.
                             e11ee11111111111111111ee11e
                             e11e1111111111111111111e11e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e11111111eeeeeee111111e1e
-                            e1e1111111eeeeeeee111111e1e
-                            e1e111111eeeeeeeeee11111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e11111eeeee1eeeee11111e1e
-                            e1e11111eeee111eeee11111e1e
-                            e1e11111111111eeeee11111e1e
-                            e1e1111111111eeeee111111e1e
-                            e1e111111111eeeeee111111e1e
+                            e1e11ee11111111111111111e1e
+                            e1e1e11e1111111111111111e1e
+                            e1e111e11111111111111111e1e
+                            e1e11e111111111111111111e1e
+                            e1e1eeee111ee1ee11111111e1e
                             e1e1111111eeeeeee1111111e1e
-                            e1e111111eeeeeee11111111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e111111eeeeeeeeee11111e1e
+                            e1e1111111eeeeeee1111111e1e
+                            e1e11111111eeeee11111111e1e
+                            e1e111111111eee111111111e1e
+                            e1e1111111111e1111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
@@ -733,6 +722,17 @@ def create_card(num2: number):
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
+                            e1e111111111111111111111e1e
+                            e1e1111111111e1111111111e1e
+                            e1e111111111eee111111111e1e
+                            e1e11111111eeeee11111111e1e
+                            e1e1111111eeeeeee1111111e1e
+                            e1e1111111eeeeeee1111111e1e
+                            e1e11111111ee1ee111eeee1e1e
+                            e1e111111111111111111e11e1e
+                            e1e11111111111111111e111e1e
+                            e1e1111111111111111e11e1e1e
+                            e1e11111111111111111ee11e1e
                             e11e1111111111111111111e11e
                             e11ee11111111111111111ee11e
                             .e111eeeeeeeeeeeeeeeee111e.
@@ -747,36 +747,36 @@ def create_card(num2: number):
                             .e111eeeeeeeeeeeeeeeee111e.
                             e11ee11111111111111111ee11e
                             e11e1111111111111111111e11e
+                            e1e11ee11111111111111111e1e
+                            e1e1e11e1111111111111111e1e
+                            e1e111e11111111111111111e1e
+                            e1e1e11e111ee1ee11111111e1e
+                            e1e11ee111eeeeeee1111111e1e
+                            e1e1111111eeeeeee1111111e1e
+                            e1e11111111eeeee11111111e1e
+                            e1e111111111eee111111111e1e
+                            e1e1111111111e1111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
+                            e1e11111111ee1ee11111111e1e
+                            e1e1111111eeeeeee1111111e1e
+                            e1e1111111eeeeeee1111111e1e
+                            e1e11111111eeeee11111111e1e
+                            e1e111111111eee111111111e1e
+                            e1e1111111111e1111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e11111eeeeeeeee1111111e1e
-                            e1e1111eeeeeeeeeeee11111e1e
-                            e1e1111eeeeeeeeeeeee1111e1e
-                            e1e1111eeeeeeeeeeeee1111e1e
-                            e1e1111111eeeeeeeeee1111e1e
-                            e1e1111111111eeeeeee1111e1e
-                            e1e111111111eeeeeeee1111e1e
-                            e1e111111111eeeeeee11111e1e
-                            e1e111111111eeeeeee11111e1e
-                            e1e11111111111eeeeee1111e1e
-                            e1e11111eeee1eeeeeee1111e1e
-                            e1e1111eeeeeeeeeeeee1111e1e
-                            e1e1111eeeeeeeeeeeee1111e1e
-                            e1e1111eeeeeeeeeeee11111e1e
-                            e1e11111eeeeeeeeee111111e1e
-                            e1e111111eeeeeeee1111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
+                            e1e1111111111e1111111111e1e
+                            e1e111111111eee111111111e1e
+                            e1e11111111eeeee11111111e1e
+                            e1e1111111eeeeeee1111111e1e
+                            e1e1111111eeeeeee111ee11e1e
+                            e1e11111111ee1ee111e11e1e1e
+                            e1e11111111111111111e111e1e
+                            e1e1111111111111111e11e1e1e
+                            e1e11111111111111111ee11e1e
                             e11e1111111111111111111e11e
                             e11ee11111111111111111ee11e
                             .e111eeeeeeeeeeeeeeeee111e.
@@ -792,34 +792,34 @@ def create_card(num2: number):
                             e11ee11111111111111111ee11e
                             e11e1111111111111111111e11e
                             e1e111111111111111111111e1e
+                            e1e1e1111111111111111111e1e
+                            e1e1e1e11111111111111111e1e
+                            e1e1eee11111111111111111e1e
+                            e1e111e11111111111111111e1e
+                            e1e111111111111111111111e1e
+                            e1e111ee1ee11111ee1ee111e1e
+                            e1e11eeeeeee111eeeeeee11e1e
+                            e1e11eeeeeee111eeeeeee11e1e
+                            e1e111eeeee11111eeeee111e1e
+                            e1e1111eee1111111eee1111e1e
+                            e1e11111e111111111e11111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
-                            e1e111111eee111eee111111e1e
-                            e1e11111eeee111eeee11111e1e
-                            e1e11111eeee111eeee11111e1e
-                            e1e11111eeee111eeee11111e1e
-                            e1e11111eeee111eeee11111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e111111eeeeeeeeee11111e1e
-                            e1e111111111111eeee11111e1e
-                            e1e111111111111eeee11111e1e
-                            e1e111111111111eeee11111e1e
-                            e1e111111111111eeee11111e1e
-                            e1e1111111111111ee111111e1e
+                            e1e11111e111111111e11111e1e
+                            e1e1111eee1111111eee1111e1e
+                            e1e111eeeee11111eeeee111e1e
+                            e1e11eeeeeee111eeeeeee11e1e
+                            e1e11eeeeeee111eeeeeee11e1e
+                            e1e111ee1ee11111ee1ee111e1e
                             e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
+                            e1e11111111111111111e111e1e
+                            e1e11111111111111111eee1e1e
+                            e1e11111111111111111e1e1e1e
+                            e1e1111111111111111111e1e1e
                             e1e111111111111111111111e1e
                             e11e1111111111111111111e11e
                             e11ee11111111111111111ee11e
@@ -835,36 +835,36 @@ def create_card(num2: number):
                             .e111eeeeeeeeeeeeeeeee111e.
                             e11ee11111111111111111ee11e
                             e11e1111111111111111111e11e
+                            e1e11eee1111111111111111e1e
+                            e1e11e111111111111111111e1e
+                            e1e11ee11111111111111111e1e
+                            e1e1111e1111111111111111e1e
+                            e1e11ee11111111111111111e1e
                             e1e111111111111111111111e1e
+                            e1e111ee1ee11111ee1ee111e1e
+                            e1e11eeeeeee111eeeeeee11e1e
+                            e1e11eeeeeee111eeeeeee11e1e
+                            e1e111eeeee11111eeeee111e1e
+                            e1e1111eee1111111eee1111e1e
+                            e1e11111e111111111e11111e1e
+                            e1e11111111ee1ee11111111e1e
+                            e1e1111111eeeeeee1111111e1e
+                            e1e1111111eeeeeee1111111e1e
+                            e1e11111111eeeee11111111e1e
+                            e1e111111111eee111111111e1e
+                            e1e1111111111e1111111111e1e
+                            e1e11111e111111111e11111e1e
+                            e1e1111eee1111111eee1111e1e
+                            e1e111eeeee11111eeeee111e1e
+                            e1e11eeeeeee111eeeeeee11e1e
+                            e1e11eeeeeee111eeeeeee11e1e
+                            e1e111ee1ee11111ee1ee111e1e
                             e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e11111eeeeeeeeeeee1111e1e
-                            e1e11111eeeeeeeeeeee1111e1e
-                            e1e11111eeeeeeeeeeee1111e1e
-                            e1e11111eeeeee1111111111e1e
-                            e1e11111eeeeee1111111111e1e
-                            e1e11111eeeeeeeeee111111e1e
-                            e1e111111eeeeeeeeee11111e1e
-                            e1e1111111eeeeeeeeee1111e1e
-                            e1e11111111eeeeeeeee1111e1e
-                            e1e111111111eeeeeeee1111e1e
-                            e1e11111eeeeeeeeeeee1111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e111111eeeeeeeee111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
+                            e1e11111111111111111ee11e1e
+                            e1e1111111111111111e1111e1e
+                            e1e11111111111111111ee11e1e
+                            e1e111111111111111111e11e1e
+                            e1e1111111111111111eee11e1e
                             e11e1111111111111111111e11e
                             e11ee11111111111111111ee11e
                             .e111eeeeeeeeeeeeeeeee111e.
@@ -878,38 +878,38 @@ def create_card(num2: number):
                             ..e111111111111111111111e..
                             .e111eeeeeeeeeeeeeeeee111e.
                             e11ee11111111111111111ee11e
-                            e11e1111111111111111111e11e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e1111111eeeeeee1111111e1e
-                            e1e111111eeeeeeeeee11111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e11111eeee1111eee11111e1e
-                            e1e11111eeee111111111111e1e
-                            e1e11111eeee111111111111e1e
-                            e1e11111eeee111111111111e1e
-                            e1e11111eeeeeeeeee111111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e11111eeee111eeee11111e1e
-                            e1e11111eeee111eeee11111e1e
-                            e1e11111eeee111eeee11111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e111111eeeeeeeee111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e11e1111111111111111111e11e
+                            e11e11ee111111111111111e11e
+                            e1e11e111111111111111111e1e
+                            e1e11eee11111111ee1ee111e1e
+                            e1e11e1e1111111eeeeeee11e1e
+                            e1e11ee11111111eeeeeee11e1e
+                            e1e1111111111111eeeee111e1e
+                            e1e11111111111111eee1111e1e
+                            e1e111111111111111e11111e1e
+                            e1e111ee1ee1111111111111e1e
+                            e1e11eeeeeee111111111111e1e
+                            e1e11eeeeeee1111ee1ee111e1e
+                            e1e111eeeee1111eeeeeee11e1e
+                            e1e1111eee11111eeeeeee11e1e
+                            e1e11111e1111111eeeee111e1e
+                            e1e11111111111111eee1111e1e
+                            e1e111111111111111e11111e1e
+                            e1e111ee1ee1111111111111e1e
+                            e1e11eeeeeee111111111111e1e
+                            e1e11eeeeeee111111e11111e1e
+                            e1e111eeeee111111eee1111e1e
+                            e1e1111eee111111eeeee111e1e
+                            e1e11111e111111eeeeeee11e1e
+                            e1e111111111111eeeeeee11e1e
+                            e1e1111111111111ee1ee111e1e
+                            e1e11111e111111111111111e1e
+                            e1e1111eee11111111111111e1e
+                            e1e111eeeee1111111111111e1e
+                            e1e11eeeeeee11111111ee11e1e
+                            e1e11eeeeeee1111111e1e11e1e
+                            e1e111ee1ee11111111eee11e1e
+                            e1e111111111111111111e11e1e
+                            e11e111111111111111ee11e11e
                             e11ee11111111111111111ee11e
                             .e111eeeeeeeeeeeeeeeee111e.
                             ..e111111111111111111111e..
@@ -1010,38 +1010,38 @@ def create_card(num2: number):
                             ..e111111111111111111111e..
                             .e111eeeeeeeeeeeeeeeee111e.
                             e11ee11111111111111111ee11e
-                            e11e1111111111111111111e11e
+                            e11e1eee111111111111111e11e
+                            e1e11e1e1111111111111111e1e
+                            e1e11eee1111111111111111e1e
+                            e1e1111e1111111111111111e1e
+                            e1e11ee11111111111111111e1e
+                            e1e11111e1e11111e1e11111e1e
+                            e1e1111eeeee111eeeee1111e1e
+                            e1e11111eee11111eee11111e1e
+                            e1e111111e1111111e111111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
+                            e1e11111e1e11111e1e11111e1e
+                            e1e1111eeeee111eeeee1111e1e
+                            e1e11111eee11111eee11111e1e
+                            e1e111111e11e1e11e111111e1e
+                            e1e11111111eeeee11111111e1e
+                            e1e111111111eee111111111e1e
+                            e1e111111e111e111e111111e1e
+                            e1e11111eee11111eee11111e1e
+                            e1e1111eeeee111eeeee1111e1e
+                            e1e11111e1e11111e1e11111e1e
                             e1e111111111111111111111e1e
                             e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111eeeeeeeee111111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e11111eeee111eeee11111e1e
-                            e1e11111eeee111eeee11111e1e
-                            e1e11111eeee111eeee11111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e111111eeeeeeeeee11111e1e
-                            e1e111111111111eeee11111e1e
-                            e1e111111111111eeee11111e1e
-                            e1e111111111111eeee11111e1e
-                            e1e11111eee1111eeee11111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e11111eeeeeeeeeee11111e1e
-                            e1e11111eeeeeeeeee111111e1e
-                            e1e1111111eeeeeee1111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e1e111111111111111111111e1e
-                            e11e1111111111111111111e11e
+                            e1e111111e1111111e111111e1e
+                            e1e11111eee11111eee11111e1e
+                            e1e1111eeeee111eeeee1111e1e
+                            e1e11111e1e11111e1e11111e1e
+                            e1e11111111111111111ee11e1e
+                            e1e1111111111111111e1111e1e
+                            e1e1111111111111111eee11e1e
+                            e1e1111111111111111e1e11e1e
+                            e11e111111111111111eee1e11e
                             e11ee11111111111111111ee11e
                             .e111eeeeeeeeeeeeeeeee111e.
                             ..e111111111111111111111e..
@@ -1232,7 +1232,7 @@ def create_card(num2: number):
     player_card.set_velocity(0, 0)
     player_card.set_position(80 + 20 * num2, 92)
 def dealer_draw_cards():
-    if dealer_sum < player_sum and dealer_sum < 16:
+    if dealer_sum < player_sum:
         create_dealer_card(False, 2)
     elif dealer_sum == player_sum and dealer_sum < 14:
         create_dealer_card(False, 2)
@@ -1248,11 +1248,110 @@ def start_game():
         dealer_sum = card_number
         create_dealer_card(False, 1)
         dealer_sum += card_number
+        if player_sum == 21:
+            game.splash("BLACKJACK!")
         pause(100)
         draws = 0
         draw_cards()
         pause(100)
+        animation.run_image_animation(hidden_dealer_card,
+            [img("""
+                    ...eeeeeeeeeeeeeeeeeeeee...
+                                ..e1e1e1e1e1e1e1e1e1e1e1e..
+                                .e1e1eeeeeeeeeeeeeeeee1e1e.
+                                e1eeecb1111111111111bceee1e
+                                ee1e1ecb1ebd111dbe1bce1e1ee
+                                e1e111ecb1ebd1dbe1bce111e1e
+                                eee1e11ecb1ebdbe1bce11e1eee
+                                e1e1ce11ecb1ebe1bce11ec1e1e
+                                eee1bce11ecb1e1bce11ecb1eee
+                                e1e1dbce11ecb1bce11ecbd1e1e
+                                eee11111111ecbce11111111eee
+                                e1e111eee111ece111eee111e1e
+                                eee11eddde11ded11eddde11eee
+                                e1e11ed1de11ded11ed1de11e1e
+                                eee111e1de11ded11ed1e111eee
+                                e1e11bddde1deeed1edddb11e1e
+                                eee1beeee11deced11eeeeb1eee
+                                e1e1ee111ddeebeedd111ee1e1e
+                                eee1e11ddeeeedeeeedd11e1eee
+                                e1e1e1deeecbdddbceeed1e1e1e
+                                e1e1e1deeecbdddbceeed1e1e1e
+                                eee1e11ddeeeedeeeedd11e1eee
+                                e1e1ee111ddeebeedd111ee1e1e
+                                eee1beeee11deced11eeeeb1eee
+                                e1e11bddde1deeed1edddb11e1e
+                                eee111e1de11ded11ed1e111eee
+                                e1e11ed1de11ded11ed1de11e1e
+                                eee11eddde11ded11eddde11eee
+                                e1e111eee111ece111eee111e1e
+                                eee11111111ecbce11111111eee
+                                e1e1dbce11ecb1bce11ecbd1e1e
+                                eee1bce11ecb1e1bce11ecb1eee
+                                e1e1ce11ecb1ebe1bce11ec1e1e
+                                eee1e11ecb1ebdbe1bce11e1eee
+                                e1e111ecb1ebd1dbe1bce111e1e
+                                ee1e1ecb1ebd111dbe1bce1e1ee
+                                e1eeecb1111111111111bceee1e
+                                .e1e1eeeeeeeeeeeeeeeee1e1e.
+                                ..e1e1e1e1e1e1e1e1e1e1e1e..
+                                ...eeeeeeeeeeeeeeeeeeeee...
+                """),
+                img("""
+                    ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                                ...........................
+                """)],
+            500,
+            False)
+        if dealer_sum == 21:
+            game.splash("BLACKJACK!")
+            game.game_over(False)
         dealer_draw_cards()
+        if dealer_sum == player_sum:
+            game.splash("Tie...")
+            game.reset()
+        elif dealer_sum > player_sum:
+            game.game_over(False)
+        elif dealer_sum < player_sum:
+            game.game_over(True)
 dealer_sum = 0
 player_card: Sprite = None
 player_sum = 0
