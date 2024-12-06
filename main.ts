@@ -8,36 +8,36 @@ function create_dealer_card(first: boolean, num: number) {
                 .e111eeeeeeeeeeeeeeeee111e.
                 e11ee11111111111111111ee11e
                 e11e1111111111111111111e11e
+                e1e11e111111111111111111e1e
+                e1e1e1e11111111111111111e1e
+                e1e1eee11111111111111111e1e
+                e1e1e1e11111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
-                e1e11111111eeeee11111111e1e
-                e1e1111111eeeeeee1111111e1e
+                e1e111111111111111111111e1e
+                e1e11111111e111e11111111e1e
+                e1e1111111eee1eee1111111e1e
                 e1e111111eeeeeeeee111111e1e
-                e1e11111eeeee1eeeee11111e1e
-                e1e11111eeee111eeee11111e1e
-                e1e1111eeee11111eeee1111e1e
-                e1e1111eeee11111eeee1111e1e
-                e1e1111eeeeeeeeeeeee1111e1e
-                e1e1111eeeeeeeeeeeee1111e1e
-                e1e1111eeeeeeeeeeeee1111e1e
-                e1e1111eee1111111eee1111e1e
-                e1e1111eee1111111eee1111e1e
-                e1e1111eee1111111eee1111e1e
-                e1e1111eee1111111eee1111e1e
+                e1e111111eeeeeeeee111111e1e
+                e1e111111eeeeeeeee111111e1e
+                e1e1111111eeeeeee1111111e1e
+                e1e11111111eeeee11111111e1e
+                e1e111111111eee111111111e1e
+                e1e1111111111e1111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
+                e1e11111111111111111e1e1e1e
+                e1e11111111111111111eee1e1e
+                e1e11111111111111111e1e1e1e
+                e1e111111111111111111e11e1e
                 e11e1111111111111111111e11e
                 e11ee11111111111111111ee11e
                 .e111eeeeeeeeeeeeeeeee111e.
@@ -51,27 +51,16 @@ function create_dealer_card(first: boolean, num: number) {
                 .e111eeeeeeeeeeeeeeeee111e.
                 e11ee11111111111111111ee11e
                 e11e1111111111111111111e11e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e11111111eeeeeee111111e1e
-                e1e1111111eeeeeeee111111e1e
-                e1e111111eeeeeeeeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeeee1eeeee11111e1e
-                e1e11111eeee111eeee11111e1e
-                e1e11111111111eeeee11111e1e
-                e1e1111111111eeeee111111e1e
-                e1e111111111eeeeee111111e1e
+                e1e11ee11111111111111111e1e
+                e1e1e11e1111111111111111e1e
+                e1e111e11111111111111111e1e
+                e1e11e111111111111111111e1e
+                e1e1eeee111ee1ee11111111e1e
                 e1e1111111eeeeeee1111111e1e
-                e1e111111eeeeeee11111111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e111111eeeeeeeeee11111e1e
+                e1e1111111eeeeeee1111111e1e
+                e1e11111111eeeee11111111e1e
+                e1e111111111eee111111111e1e
+                e1e1111111111e1111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
@@ -81,12 +70,23 @@ function create_dealer_card(first: boolean, num: number) {
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
+                e1e111111111111111111111e1e
+                e1e1111111111e1111111111e1e
+                e1e111111111eee111111111e1e
+                e1e11111111eeeee11111111e1e
+                e1e1111111eeeeeee1111111e1e
+                e1e1111111eeeeeee1111111e1e
+                e1e11111111ee1ee111eeee1e1e
+                e1e111111111111111111e11e1e
+                e1e11111111111111111e111e1e
+                e1e1111111111111111e11e1e1e
+                e1e11111111111111111ee11e1e
                 e11e1111111111111111111e11e
                 e11ee11111111111111111ee11e
                 .e111eeeeeeeeeeeeeeeee111e.
                 ..e111111111111111111111e..
                 ...eeeeeeeeeeeeeeeeeeeee...
-                `, SpriteKind.Player)
+            `, SpriteKind.Player)
         } else if (card_number == 3) {
             dealer_card = sprites.create(img`
                 ...eeeeeeeeeeeeeeeeeeeee...
@@ -94,36 +94,36 @@ function create_dealer_card(first: boolean, num: number) {
                 .e111eeeeeeeeeeeeeeeee111e.
                 e11ee11111111111111111ee11e
                 e11e1111111111111111111e11e
+                e1e11ee11111111111111111e1e
+                e1e1e11e1111111111111111e1e
+                e1e111e11111111111111111e1e
+                e1e1e11e111ee1ee11111111e1e
+                e1e11ee111eeeeeee1111111e1e
+                e1e1111111eeeeeee1111111e1e
+                e1e11111111eeeee11111111e1e
+                e1e111111111eee111111111e1e
+                e1e1111111111e1111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
+                e1e11111111ee1ee11111111e1e
+                e1e1111111eeeeeee1111111e1e
+                e1e1111111eeeeeee1111111e1e
+                e1e11111111eeeee11111111e1e
+                e1e111111111eee111111111e1e
+                e1e1111111111e1111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e11111eeeeeeeee1111111e1e
-                e1e1111eeeeeeeeeeee11111e1e
-                e1e1111eeeeeeeeeeeee1111e1e
-                e1e1111eeeeeeeeeeeee1111e1e
-                e1e1111111eeeeeeeeee1111e1e
-                e1e1111111111eeeeeee1111e1e
-                e1e111111111eeeeeeee1111e1e
-                e1e111111111eeeeeee11111e1e
-                e1e111111111eeeeeee11111e1e
-                e1e11111111111eeeeee1111e1e
-                e1e11111eeee1eeeeeee1111e1e
-                e1e1111eeeeeeeeeeeee1111e1e
-                e1e1111eeeeeeeeeeeee1111e1e
-                e1e1111eeeeeeeeeeee11111e1e
-                e1e11111eeeeeeeeee111111e1e
-                e1e111111eeeeeeee1111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
+                e1e1111111111e1111111111e1e
+                e1e111111111eee111111111e1e
+                e1e11111111eeeee11111111e1e
+                e1e1111111eeeeeee1111111e1e
+                e1e1111111eeeeeee111ee11e1e
+                e1e11111111ee1ee111e11e1e1e
+                e1e11111111111111111e111e1e
+                e1e1111111111111111e11e1e1e
+                e1e11111111111111111ee11e1e
                 e11e1111111111111111111e11e
                 e11ee11111111111111111ee11e
                 .e111eeeeeeeeeeeeeeeee111e.
@@ -138,41 +138,41 @@ function create_dealer_card(first: boolean, num: number) {
                 e11ee11111111111111111ee11e
                 e11e1111111111111111111e11e
                 e1e111111111111111111111e1e
+                e1e1e1111111111111111111e1e
+                e1e1e1e11111111111111111e1e
+                e1e1eee11111111111111111e1e
+                e1e111e11111111111111111e1e
+                e1e111111111111111111111e1e
+                e1e111ee1ee11111ee1ee111e1e
+                e1e11eeeeeee111eeeeeee11e1e
+                e1e11eeeeeee111eeeeeee11e1e
+                e1e111eeeee11111eeeee111e1e
+                e1e1111eee1111111eee1111e1e
+                e1e11111e111111111e11111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
-                e1e111111eee111eee111111e1e
-                e1e11111eeee111eeee11111e1e
-                e1e11111eeee111eeee11111e1e
-                e1e11111eeee111eeee11111e1e
-                e1e11111eeee111eeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e111111eeeeeeeeee11111e1e
-                e1e111111111111eeee11111e1e
-                e1e111111111111eeee11111e1e
-                e1e111111111111eeee11111e1e
-                e1e111111111111eeee11111e1e
-                e1e1111111111111ee111111e1e
+                e1e11111e111111111e11111e1e
+                e1e1111eee1111111eee1111e1e
+                e1e111eeeee11111eeeee111e1e
+                e1e11eeeeeee111eeeeeee11e1e
+                e1e11eeeeeee111eeeeeee11e1e
+                e1e111ee1ee11111ee1ee111e1e
                 e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
+                e1e11111111111111111e111e1e
+                e1e11111111111111111eee1e1e
+                e1e11111111111111111e1e1e1e
+                e1e1111111111111111111e1e1e
                 e1e111111111111111111111e1e
                 e11e1111111111111111111e11e
                 e11ee11111111111111111ee11e
                 .e111eeeeeeeeeeeeeeeee111e.
                 ..e111111111111111111111e..
                 ...eeeeeeeeeeeeeeeeeeeee...
-                `, SpriteKind.Player)
+            `, SpriteKind.Player)
         } else if (card_number == 5) {
             dealer_card = sprites.create(img`
                 ...eeeeeeeeeeeeeeeeeeeee...
@@ -180,85 +180,85 @@ function create_dealer_card(first: boolean, num: number) {
                 .e111eeeeeeeeeeeeeeeee111e.
                 e11ee11111111111111111ee11e
                 e11e1111111111111111111e11e
+                e1e11eee1111111111111111e1e
+                e1e11e111111111111111111e1e
+                e1e11ee11111111111111111e1e
+                e1e1111e1111111111111111e1e
+                e1e11ee11111111111111111e1e
                 e1e111111111111111111111e1e
+                e1e111ee1ee11111ee1ee111e1e
+                e1e11eeeeeee111eeeeeee11e1e
+                e1e11eeeeeee111eeeeeee11e1e
+                e1e111eeeee11111eeeee111e1e
+                e1e1111eee1111111eee1111e1e
+                e1e11111e111111111e11111e1e
+                e1e11111111ee1ee11111111e1e
+                e1e1111111eeeeeee1111111e1e
+                e1e1111111eeeeeee1111111e1e
+                e1e11111111eeeee11111111e1e
+                e1e111111111eee111111111e1e
+                e1e1111111111e1111111111e1e
+                e1e11111e111111111e11111e1e
+                e1e1111eee1111111eee1111e1e
+                e1e111eeeee11111eeeee111e1e
+                e1e11eeeeeee111eeeeeee11e1e
+                e1e11eeeeeee111eeeeeee11e1e
+                e1e111ee1ee11111ee1ee111e1e
                 e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeeeeeeeeeee1111e1e
-                e1e11111eeeeeeeeeeee1111e1e
-                e1e11111eeeeeeeeeeee1111e1e
-                e1e11111eeeeee1111111111e1e
-                e1e11111eeeeee1111111111e1e
-                e1e11111eeeeeeeeee111111e1e
-                e1e111111eeeeeeeeee11111e1e
-                e1e1111111eeeeeeeeee1111e1e
-                e1e11111111eeeeeeeee1111e1e
-                e1e111111111eeeeeeee1111e1e
-                e1e11111eeeeeeeeeeee1111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e111111eeeeeeeee111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
+                e1e11111111111111111ee11e1e
+                e1e1111111111111111e1111e1e
+                e1e11111111111111111ee11e1e
+                e1e111111111111111111e11e1e
+                e1e1111111111111111eee11e1e
                 e11e1111111111111111111e11e
                 e11ee11111111111111111ee11e
                 .e111eeeeeeeeeeeeeeeee111e.
                 ..e111111111111111111111e..
                 ...eeeeeeeeeeeeeeeeeeeee...
-                `, SpriteKind.Player)
+            `, SpriteKind.Player)
         } else if (card_number == 6) {
             dealer_card = sprites.create(img`
                 ...eeeeeeeeeeeeeeeeeeeee...
                 ..e111111111111111111111e..
                 .e111eeeeeeeeeeeeeeeee111e.
                 e11ee11111111111111111ee11e
-                e11e1111111111111111111e11e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e1111111eeeeeee1111111e1e
-                e1e111111eeeeeeeeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeee1111eee11111e1e
-                e1e11111eeee111111111111e1e
-                e1e11111eeee111111111111e1e
-                e1e11111eeee111111111111e1e
-                e1e11111eeeeeeeeee111111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeee111eeee11111e1e
-                e1e11111eeee111eeee11111e1e
-                e1e11111eeee111eeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e111111eeeeeeeee111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e11e1111111111111111111e11e
+                e11e11ee111111111111111e11e
+                e1e11e111111111111111111e1e
+                e1e11eee11111111ee1ee111e1e
+                e1e11e1e1111111eeeeeee11e1e
+                e1e11ee11111111eeeeeee11e1e
+                e1e1111111111111eeeee111e1e
+                e1e11111111111111eee1111e1e
+                e1e111111111111111e11111e1e
+                e1e111ee1ee1111111111111e1e
+                e1e11eeeeeee111111111111e1e
+                e1e11eeeeeee1111ee1ee111e1e
+                e1e111eeeee1111eeeeeee11e1e
+                e1e1111eee11111eeeeeee11e1e
+                e1e11111e1111111eeeee111e1e
+                e1e11111111111111eee1111e1e
+                e1e111111111111111e11111e1e
+                e1e111ee1ee1111111111111e1e
+                e1e11eeeeeee111111111111e1e
+                e1e11eeeeeee111111e11111e1e
+                e1e111eeeee111111eee1111e1e
+                e1e1111eee111111eeeee111e1e
+                e1e11111e111111eeeeeee11e1e
+                e1e111111111111eeeeeee11e1e
+                e1e1111111111111ee1ee111e1e
+                e1e11111e111111111111111e1e
+                e1e1111eee11111111111111e1e
+                e1e111eeeee1111111111111e1e
+                e1e11eeeeeee11111111ee11e1e
+                e1e11eeeeeee1111111e1e11e1e
+                e1e111ee1ee11111111eee11e1e
+                e1e111111111111111111e11e1e
+                e11e111111111111111ee11e11e
                 e11ee11111111111111111ee11e
                 .e111eeeeeeeeeeeeeeeee111e.
                 ..e111111111111111111111e..
                 ...eeeeeeeeeeeeeeeeeeeee...
-                `, SpriteKind.Player)
+            `, SpriteKind.Player)
         } else if (card_number == 7) {
             dealer_card = sprites.create(img`
                 ...eeeeeeeeeeeeeeeeeeeee...
@@ -266,42 +266,42 @@ function create_dealer_card(first: boolean, num: number) {
                 .e111eeeeeeeeeeeeeeeee111e.
                 e11ee11111111111111111ee11e
                 e11e1111111111111111111e11e
+                e1e11eee1111111111111111e1e
+                e1e1111e1111111111111111e1e
+                e1e111e11111111111111111e1e
+                e1e11e111111111111111111e1e
+                e1e111111111111111111111e1e
+                e1e111111111111111111111e1e
+                e1e11111e1e11111e1e11111e1e
+                e1e1111eeeee111eeeee1111e1e
+                e1e11111eee11111eee11111e1e
+                e1e111111e1111111e111111e1e
+                e1e111111111e1e111111111e1e
+                e1e11111111eeeee11111111e1e
+                e1e111111111eee111111111e1e
+                e1e1111111111e1111111111e1e
+                e1e11111e1e11111e1e11111e1e
+                e1e1111eeeee111eeeee1111e1e
+                e1e11111eee11111eee11111e1e
+                e1e111111e1111111e111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
+                e1e111111e1111111e111111e1e
+                e1e11111eee11111eee11111e1e
+                e1e1111eeeee111eeeee1111e1e
+                e1e11111e1e11111e1e11111e1e
                 e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111eeeeeeeeee11111e1e
-                e1e1111eeeeeeeeeeeee1111e1e
-                e1e1111eeeeeeeeeeeee1111e1e
-                e1e1111eeeeeeeeeeeee1111e1e
-                e1e11111eeeeeeeeeeee1111e1e
-                e1e111111111111eeeee1111e1e
-                e1e11111111111eeeeee1111e1e
-                e1e1111111111eeeeee11111e1e
-                e1e1111111111eeeeee11111e1e
-                e1e111111111eeeeee111111e1e
-                e1e11111111eeeeee1111111e1e
-                e1e1111111eeeeeee1111111e1e
-                e1e111111eeeeeee11111111e1e
-                e1e111111eeeeee111111111e1e
-                e1e11111eeeeee1111111111e1e
-                e1e11111eeeee11111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
+                e1e111111111111111111e11e1e
+                e1e11111111111111111e111e1e
+                e1e1111111111111111e1111e1e
+                e1e1111111111111111eee11e1e
                 e11e1111111111111111111e11e
                 e11ee11111111111111111ee11e
                 .e111eeeeeeeeeeeeeeeee111e.
                 ..e111111111111111111111e..
                 ...eeeeeeeeeeeeeeeeeeeee...
-                `, SpriteKind.Player)
+            `, SpriteKind.Player)
         } else if (card_number == 8) {
             dealer_card = sprites.create(img`
                 ...eeeeeeeeeeeeeeeeeeeee...
@@ -309,85 +309,85 @@ function create_dealer_card(first: boolean, num: number) {
                 .e111eeeeeeeeeeeeeeeee111e.
                 e11ee11111111111111111ee11e
                 e11e1111111111111111111e11e
+                e1e11e111111111111111111e1e
+                e1e1e1e11111111111111111e1e
+                e1e11e111111111111111111e1e
+                e1e1e1e11111111111111111e1e
+                e1e11e111111111111111111e1e
+                e1e11111e1e11111e1e11111e1e
+                e1e1111eeeee111eeeee1111e1e
+                e1e11111eee11111eee11111e1e
+                e1e111111e1111111e111111e1e
+                e1e111111111e1e111111111e1e
+                e1e11111111eeeee11111111e1e
+                e1e111111111eee111111111e1e
+                e1e1111111111e1111111111e1e
+                e1e11111e1e11111e1e11111e1e
+                e1e1111eeeee111eeeee1111e1e
+                e1e11111eee11111eee11111e1e
+                e1e111111e111e111e111111e1e
+                e1e111111111eee111111111e1e
+                e1e11111111eeeee11111111e1e
+                e1e111111111e1e111111111e1e
+                e1e111111e1111111e111111e1e
+                e1e11111eee11111eee11111e1e
+                e1e1111eeeee111eeeee1111e1e
+                e1e11111e1e11111e1e11111e1e
                 e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e1111111eeeeeee1111111e1e
-                e1e111111eeeeeeeee111111e1e
-                e1e111111eeeeeeeee111111e1e
-                e1e111111eeee11eee111111e1e
-                e1e111111eee111eee111111e1e
-                e1e111111eee11eeee111111e1e
-                e1e111111eeeeeeeee111111e1e
-                e1e111111eeeeeeeee111111e1e
-                e1e1111111eeeeeee1111111e1e
-                e1e111111eeeeeeeee111111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeeee1eeeee11111e1e
-                e1e11111eeee111eeee11111e1e
-                e1e11111eeee111eeee11111e1e
-                e1e11111eeee111eeee11111e1e
-                e1e11111eeeee1eeeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e111111eeeeeeeee111111e1e
-                e1e1111111eeeeeee1111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
+                e1e111111111111111111e11e1e
+                e1e11111111111111111e1e1e1e
+                e1e111111111111111111e11e1e
+                e1e11111111111111111e1e1e1e
+                e1e111111111111111111e11e1e
                 e11e1111111111111111111e11e
                 e11ee11111111111111111ee11e
                 .e111eeeeeeeeeeeeeeeee111e.
                 ..e111111111111111111111e..
                 ...eeeeeeeeeeeeeeeeeeeee...
-                `, SpriteKind.Player)
+            `, SpriteKind.Player)
         } else if (card_number == 9) {
             dealer_card = sprites.create(img`
                 ...eeeeeeeeeeeeeeeeeeeee...
                 ..e111111111111111111111e..
                 .e111eeeeeeeeeeeeeeeee111e.
                 e11ee11111111111111111ee11e
-                e11e1111111111111111111e11e
+                e11e1eee111111111111111e11e
+                e1e11e1e1111111111111111e1e
+                e1e11eee1111111111111111e1e
+                e1e1111e1111111111111111e1e
+                e1e11ee11111111111111111e1e
+                e1e11111e1e11111e1e11111e1e
+                e1e1111eeeee111eeeee1111e1e
+                e1e11111eee11111eee11111e1e
+                e1e111111e1111111e111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
+                e1e11111e1e11111e1e11111e1e
+                e1e1111eeeee111eeeee1111e1e
+                e1e11111eee11111eee11111e1e
+                e1e111111e11e1e11e111111e1e
+                e1e11111111eeeee11111111e1e
+                e1e111111111eee111111111e1e
+                e1e111111e111e111e111111e1e
+                e1e11111eee11111eee11111e1e
+                e1e1111eeeee111eeeee1111e1e
+                e1e11111e1e11111e1e11111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111eeeeeeeee111111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeee111eeee11111e1e
-                e1e11111eeee111eeee11111e1e
-                e1e11111eeee111eeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e111111eeeeeeeeee11111e1e
-                e1e111111111111eeee11111e1e
-                e1e111111111111eeee11111e1e
-                e1e111111111111eeee11111e1e
-                e1e11111eee1111eeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeeeeeeeeee11111e1e
-                e1e11111eeeeeeeeee111111e1e
-                e1e1111111eeeeeee1111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e11e1111111111111111111e11e
+                e1e111111e1111111e111111e1e
+                e1e11111eee11111eee11111e1e
+                e1e1111eeeee111eeeee1111e1e
+                e1e11111e1e11111e1e11111e1e
+                e1e11111111111111111ee11e1e
+                e1e1111111111111111e1111e1e
+                e1e1111111111111111eee11e1e
+                e1e1111111111111111e1e11e1e
+                e11e111111111111111eee1e11e
                 e11ee11111111111111111ee11e
                 .e111eeeeeeeeeeeeeeeee111e.
                 ..e111111111111111111111e..
                 ...eeeeeeeeeeeeeeeeeeeee...
-                `, SpriteKind.Player)
+            `, SpriteKind.Player)
         } else if (card_number == 10) {
             _10_j_q_k = randint(0, 3)
             if (_10_j_q_k == 0) {
@@ -397,42 +397,42 @@ function create_dealer_card(first: boolean, num: number) {
                     .e111eeeeeeeeeeeeeeeee111e.
                     e11ee11111111111111111ee11e
                     e11e1111111111111111111e11e
+                    e1e11e1eee11111111111111e1e
+                    e1e11e1e1e11111111111111e1e
+                    e1e11e1eee11111111111111e1e
+                    e1e111111111111111111111e1e
+                    e1e11111e1e11111e1e11111e1e
+                    e1e1111eeeee111eeeee1111e1e
+                    e1e11111eee11111eee11111e1e
+                    e1e111111e11e1e11e111111e1e
+                    e1e11111111eeeee11111111e1e
+                    e1e111111111eee111111111e1e
+                    e1e11111e1e11e11e1e11111e1e
+                    e1e1111eeeee111eeeee1111e1e
+                    e1e11111eee11111eee11111e1e
+                    e1e111111e1111111e111111e1e
                     e1e111111111111111111111e1e
                     e1e111111111111111111111e1e
+                    e1e111111e1111111e111111e1e
+                    e1e11111eee11111eee11111e1e
+                    e1e1111eeeee111eeeee1111e1e
+                    e1e11111e1e11e11e1e11111e1e
+                    e1e111111111eee111111111e1e
+                    e1e11111111eeeee11111111e1e
+                    e1e111111e11e1e11e111111e1e
+                    e1e11111eee11111eee11111e1e
+                    e1e1111eeeee111eeeee1111e1e
+                    e1e11111e1e11111e1e11111e1e
                     e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e11111ee11111eeee11111e1e
-                    e1e1111eeee111eeeeee1111e1e
-                    e1e1111eeee11eeeeeeee111e1e
-                    e1e1111eeee11eeeeeeee111e1e
-                    e1e1111eeee11eee11eee111e1e
-                    e1e1111eeee11eee11eee111e1e
-                    e1e1111eeee11eee11eee111e1e
-                    e1e1111eeee11eee11eee111e1e
-                    e1e1111eeee11eee11eee111e1e
-                    e1e1111eeee11eee11eee111e1e
-                    e1e1111eeee11eeeeeeee111e1e
-                    e1e1111eeee11eeeeeeee111e1e
-                    e1e1111eeee111eeeeee1111e1e
-                    e1e11111ee11111eeee11111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
+                    e1e11111111111111eee1e11e1e
+                    e1e11111111111111e1e1e11e1e
+                    e1e11111111111111eee1e11e1e
                     e11e1111111111111111111e11e
                     e11ee11111111111111111ee11e
                     .e111eeeeeeeeeeeeeeeee111e.
                     ..e111111111111111111111e..
                     ...eeeeeeeeeeeeeeeeeeeee...
-                    `, SpriteKind.Player)
+                `, SpriteKind.Player)
             } else if (_10_j_q_k == 1) {
                 dealer_card = sprites.create(img`
                     ...eeeeeeeeeeeeeeeeeeeee...
@@ -440,42 +440,42 @@ function create_dealer_card(first: boolean, num: number) {
                     .e111eeeeeeeeeeeeeeeee111e.
                     e11ee11111111111111111ee11e
                     e11e1111111111111111111e11e
+                    e1e11ee11111111111e1e111e1e
+                    e1e111e1111111111eeeee11e1e
+                    e1e1e1e11111111111eee111e1e
+                    e1e11e1111111111111e1111e1e
                     e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e11111111111eeee111111e1e
-                    e1e11111111111eeeee11111e1e
-                    e1e11111111111eeeee11111e1e
-                    e1e11111111111eeeee11111e1e
-                    e1e11111111111eeeee11111e1e
-                    e1e11111111111eeeee11111e1e
-                    e1e11111111111eeeee11111e1e
-                    e1e11111111111eeeee11111e1e
-                    e1e11111111111eeeee11111e1e
-                    e1e11111111111eeeee11111e1e
-                    e1e11111111111eeeee11111e1e
-                    e1e1111eee1111eeeee11111e1e
-                    e1e111eeee111eeeeee11111e1e
-                    e1e111eeeee11eeeeee11111e1e
-                    e1e111eeeeeeeeeeeee11111e1e
-                    e1e1111eeeeeeeeeee111111e1e
-                    e1e1111eeeeeeeeeee111111e1e
-                    e1e11111eeeeeeeee1111111e1e
-                    e1e1111111eeeeee11111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
+                    e1e111eeee11111111111111e1e
+                    e1e111e311e1111111111111e1e
+                    e1e111ed33e1111111111111e1e
+                    e1e111ed331e111111111111e1e
+                    e1e111edd33e111111111111e1e
+                    e1e1111edd31e11111111111e1e
+                    e1e1111edd33e11111111111e1e
+                    e1e11111edd31e1111111111e1e
+                    e1e11111eddd3e1111111111e1e
+                    e1e111111edd33e111111111e1e
+                    e1e111111eddd3e111111111e1e
+                    e1e1111111edd33e11ee1111e1e
+                    e1e1111111eddd33ee35e111e1e
+                    e1e11111111edd33e35e1111e1e
+                    e1e11111111eddde35e11111e1e
+                    e1e111111111ede95e111111e1e
+                    e1e1111111111e54bbe11111e1e
+                    e1e111111111e54cbbe11111e1e
+                    e1e11111111e44eccbbe1111e1e
+                    e1e111111111ee1eccbe1111e1e
+                    e1e111111111111eccce1111e1e
+                    e1e1111e11111111eee11e11e1e
+                    e1e111eee11111111111e1e1e1e
+                    e1e11eeeee1111111111e111e1e
+                    e1e111e1e11111111111ee11e1e
                     e11e1111111111111111111e11e
                     e11ee11111111111111111ee11e
                     .e111eeeeeeeeeeeeeeeee111e.
                     ..e111111111111111111111e..
                     ...eeeeeeeeeeeeeeeeeeeee...
-                    `, SpriteKind.Player)
+                `, SpriteKind.Player)
             } else if (_10_j_q_k == 2) {
                 dealer_card = sprites.create(img`
                     ...eeeeeeeeeeeeeeeeeeeee...
@@ -483,42 +483,42 @@ function create_dealer_card(first: boolean, num: number) {
                     .e111eeeeeeeeeeeeeeeee111e.
                     e11ee11111111111111111ee11e
                     e11e1111111111111111111e11e
+                    e1e11ee11111111111e1e111e1e
+                    e1e1e11e111111111eeeee11e1e
+                    e1e1e11e1111111111eee111e1e
+                    e1e11ee111111111111e1111e1e
+                    e1e1111e1111111111111111e1e
                     e1e111111111111111111111e1e
                     e1e111111111111111111111e1e
                     e1e111111111111111111111e1e
+                    e1e1111111111e1111111111e1e
+                    e1e1111111111e1111111111e1e
+                    e1e111111111e9e111111111e1e
+                    e1e111111111e3e111111111e1e
+                    e1e11ee1111e355e1111ee11e1e
+                    e1e11e9e111e345e111e9e11e1e
+                    e1e111e5e1e35555e1e5e111e1e
+                    e1e111e5e1e55555e1e5e111e1e
+                    e1e111e45e3554555e54e111e1e
+                    e1e1111e555543e5554e1111e1e
+                    e1e1111e4555e945554e1111e1e
+                    e1e11111e4555e5554e11111e1e
+                    e1e11111e433353554e11111e1e
+                    e1e11111eeeeeeeeeee11111e1e
                     e1e111111111111111111111e1e
                     e1e111111111111111111111e1e
                     e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111eeeeeee11111111e1e
-                    e1e11111eeeeeeeee1111111e1e
-                    e1e1111eeeeeeeeeee111111e1e
-                    e1e111eeeeeeeeeeeee11111e1e
-                    e1e111eeeeee1eeeeee11111e1e
-                    e1e111eeeee111eeeee11111e1e
-                    e1e111eeeee111eeeee11111e1e
-                    e1e111eeeee111eeeee11111e1e
-                    e1e111eeeeee1eeeeee11111e1e
-                    e1e111eeeeeeeeeeeee11111e1e
-                    e1e1111eeeeeeeeeeeee1111e1e
-                    e1e11111eeeeeeeeeeee1111e1e
-                    e1e111111eeeeeeeeeeee111e1e
-                    e1e1111111111111eeeee111e1e
-                    e1e111111111111111eee111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
+                    e1e1111111111111111e1111e1e
+                    e1e1111e111111111111ee11e1e
+                    e1e111eee1111111111e11e1e1e
+                    e1e11eeeee111111111e11e1e1e
+                    e1e111e1e11111111111ee11e1e
                     e11e1111111111111111111e11e
                     e11ee11111111111111111ee11e
                     .e111eeeeeeeeeeeeeeeee111e.
                     ..e111111111111111111111e..
                     ...eeeeeeeeeeeeeeeeeeeee...
-                    `, SpriteKind.Player)
+                `, SpriteKind.Player)
             } else if (_10_j_q_k == 3) {
                 dealer_card = sprites.create(img`
                     ...eeeeeeeeeeeeeeeeeeeee...
@@ -526,42 +526,42 @@ function create_dealer_card(first: boolean, num: number) {
                     .e111eeeeeeeeeeeeeeeee111e.
                     e11ee11111111111111111ee11e
                     e11e1111111111111111111e11e
+                    e1e11e1e1111111111e1e111e1e
+                    e1e11ee1111111111eeeee11e1e
+                    e1e11e1e1111111111eee111e1e
+                    e1e11e1e11111111111e1111e1e
                     e1e111111111111111111111e1e
                     e1e111111111111111111111e1e
                     e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
-                    e1e11111eee111111eee1111e1e
-                    e1e1111eeeee1111eeeee111e1e
-                    e1e1111eeeee11eeeeeee111e1e
-                    e1e1111eeeee1eeeeeeee111e1e
+                    e1e1111111111e1111111111e1e
+                    e1e111111111e9e111111111e1e
+                    e1e1111111111e1111111111e1e
+                    e1e111111111e3e111111111e1e
+                    e1e111e1111e355e1111e111e1e
+                    e1e11e3e111e355e111e3e11e1e
+                    e1e11e35e1e35554e1e35e11e1e
+                    e1e11e555e5553544e355e11e1e
+                    e1e11e495e5549e54e594e11e1e
+                    e1e11e4454e5e945e4444e11e1e
+                    e1e111e455455e554444e111e1e
+                    e1e111e4455555555544e111e1e
                     e1e1111eeeeeeeeeeeee1111e1e
-                    e1e1111eeeeeeeeeeee11111e1e
-                    e1e1111eeeeeeeeeee111111e1e
-                    e1e1111eeeeeeeeee1111111e1e
-                    e1e1111eeeeeeeee11111111e1e
-                    e1e1111eeeeeeee111111111e1e
-                    e1e1111eeeeeeee111111111e1e
-                    e1e1111eeeeeeeee11111111e1e
-                    e1e1111eeeeeeeeee1111111e1e
-                    e1e1111eeeeeeeeeeee11111e1e
-                    e1e1111eeeeeeeeeeee11111e1e
-                    e1e1111eeeee1eeeeeee1111e1e
-                    e1e1111eeeee11eeeeee1111e1e
-                    e1e1111eeeee111eeeee1111e1e
-                    e1e1111eeeee111eeeee1111e1e
-                    e1e11111eee11111eee11111e1e
+                    e1e1111e44444555555e1111e1e
+                    e1e1111eeeeeeeeeeeee1111e1e
                     e1e111111111111111111111e1e
                     e1e111111111111111111111e1e
                     e1e111111111111111111111e1e
                     e1e111111111111111111111e1e
-                    e1e111111111111111111111e1e
+                    e1e1111e11111111111e1e11e1e
+                    e1e111eee1111111111e1e11e1e
+                    e1e11eeeee1111111111ee11e1e
+                    e1e111e1e1111111111e1e11e1e
                     e11e1111111111111111111e11e
                     e11ee11111111111111111ee11e
                     .e111eeeeeeeeeeeeeeeee111e.
                     ..e111111111111111111111e..
                     ...eeeeeeeeeeeeeeeeeeeee...
-                    `, SpriteKind.Player)
+                `, SpriteKind.Player)
             }
         }
         dealer_card.setPosition(180, 27)
@@ -612,7 +612,7 @@ function create_dealer_card(first: boolean, num: number) {
             .e1e1eeeeeeeeeeeeeeeee1e1e.
             ..e1e1e1e1e1e1e1e1e1e1e1e..
             ...eeeeeeeeeeeeeeeeeeeee...
-            `, SpriteKind.Player)
+        `, SpriteKind.Player)
         if (first) {
             hidden_dealer_card.setPosition(180, 27)
             hidden_dealer_card.setVelocity(-2000 + 20 * num, 0)
@@ -683,7 +683,7 @@ function create_card(num2: number) {
             .e111eeeeeeeeeeeeeeeee111e.
             ..e111111111111111111111e..
             ...eeeeeeeeeeeeeeeeeeeee...
-            `, SpriteKind.Player)
+        `, SpriteKind.Player)
     } else if (card_number == 2) {
         player_card = sprites.create(img`
             ...eeeeeeeeeeeeeeeeeeeee...
@@ -769,7 +769,7 @@ function create_card(num2: number) {
             .e111eeeeeeeeeeeeeeeee111e.
             ..e111111111111111111111e..
             ...eeeeeeeeeeeeeeeeeeeee...
-            `, SpriteKind.Player)
+        `, SpriteKind.Player)
     } else if (card_number == 4) {
         player_card = sprites.create(img`
             ...eeeeeeeeeeeeeeeeeeeee...
@@ -812,7 +812,7 @@ function create_card(num2: number) {
             .e111eeeeeeeeeeeeeeeee111e.
             ..e111111111111111111111e..
             ...eeeeeeeeeeeeeeeeeeeee...
-            `, SpriteKind.Player)
+        `, SpriteKind.Player)
     } else if (card_number == 5) {
         player_card = sprites.create(img`
             ...eeeeeeeeeeeeeeeeeeeee...
@@ -855,7 +855,7 @@ function create_card(num2: number) {
             .e111eeeeeeeeeeeeeeeee111e.
             ..e111111111111111111111e..
             ...eeeeeeeeeeeeeeeeeeeee...
-            `, SpriteKind.Player)
+        `, SpriteKind.Player)
     } else if (card_number == 6) {
         player_card = sprites.create(img`
             ...eeeeeeeeeeeeeeeeeeeee...
@@ -898,7 +898,7 @@ function create_card(num2: number) {
             .e111eeeeeeeeeeeeeeeee111e.
             ..e111111111111111111111e..
             ...eeeeeeeeeeeeeeeeeeeee...
-            `, SpriteKind.Player)
+        `, SpriteKind.Player)
     } else if (card_number == 7) {
         player_card = sprites.create(img`
             ...eeeeeeeeeeeeeeeeeeeee...
@@ -906,42 +906,42 @@ function create_card(num2: number) {
             .e111eeeeeeeeeeeeeeeee111e.
             e11ee11111111111111111ee11e
             e11e1111111111111111111e11e
+            e1e11eee1111111111111111e1e
+            e1e1111e1111111111111111e1e
+            e1e111e11111111111111111e1e
+            e1e11e111111111111111111e1e
+            e1e111111111111111111111e1e
+            e1e111111111111111111111e1e
+            e1e11111e1e11111e1e11111e1e
+            e1e1111eeeee111eeeee1111e1e
+            e1e11111eee11111eee11111e1e
+            e1e111111e1111111e111111e1e
+            e1e111111111e1e111111111e1e
+            e1e11111111eeeee11111111e1e
+            e1e111111111eee111111111e1e
+            e1e1111111111e1111111111e1e
+            e1e11111e1e11111e1e11111e1e
+            e1e1111eeeee111eeeee1111e1e
+            e1e11111eee11111eee11111e1e
+            e1e111111e1111111e111111e1e
             e1e111111111111111111111e1e
             e1e111111111111111111111e1e
             e1e111111111111111111111e1e
+            e1e111111e1111111e111111e1e
+            e1e11111eee11111eee11111e1e
+            e1e1111eeeee111eeeee1111e1e
+            e1e11111e1e11111e1e11111e1e
             e1e111111111111111111111e1e
-            e1e111111111111111111111e1e
-            e1e111111111111111111111e1e
-            e1e111111eeeeeeeeee11111e1e
-            e1e1111eeeeeeeeeeeee1111e1e
-            e1e1111eeeeeeeeeeeee1111e1e
-            e1e1111eeeeeeeeeeeee1111e1e
-            e1e11111eeeeeeeeeeee1111e1e
-            e1e111111111111eeeee1111e1e
-            e1e11111111111eeeeee1111e1e
-            e1e1111111111eeeeee11111e1e
-            e1e1111111111eeeeee11111e1e
-            e1e111111111eeeeee111111e1e
-            e1e11111111eeeeee1111111e1e
-            e1e1111111eeeeeee1111111e1e
-            e1e111111eeeeeee11111111e1e
-            e1e111111eeeeee111111111e1e
-            e1e11111eeeeee1111111111e1e
-            e1e11111eeeee11111111111e1e
-            e1e111111111111111111111e1e
-            e1e111111111111111111111e1e
-            e1e111111111111111111111e1e
-            e1e111111111111111111111e1e
-            e1e111111111111111111111e1e
-            e1e111111111111111111111e1e
-            e1e111111111111111111111e1e
-            e1e111111111111111111111e1e
+            e1e111111111111111111e11e1e
+            e1e11111111111111111e111e1e
+            e1e1111111111111111e1111e1e
+            e1e1111111111111111eee11e1e
             e11e1111111111111111111e11e
             e11ee11111111111111111ee11e
             .e111eeeeeeeeeeeeeeeee111e.
             ..e111111111111111111111e..
             ...eeeeeeeeeeeeeeeeeeeee...
-            `, SpriteKind.Player)
+        `, SpriteKind.Player)
     } else if (card_number == 8) {
         player_card = sprites.create(img`
             ...eeeeeeeeeeeeeeeeeeeee...
@@ -949,42 +949,42 @@ function create_card(num2: number) {
             .e111eeeeeeeeeeeeeeeee111e.
             e11ee11111111111111111ee11e
             e11e1111111111111111111e11e
+            e1e11e111111111111111111e1e
+            e1e1e1e11111111111111111e1e
+            e1e11e111111111111111111e1e
+            e1e1e1e11111111111111111e1e
+            e1e11e111111111111111111e1e
+            e1e11111e1e11111e1e11111e1e
+            e1e1111eeeee111eeeee1111e1e
+            e1e11111eee11111eee11111e1e
+            e1e111111e1111111e111111e1e
+            e1e111111111e1e111111111e1e
+            e1e11111111eeeee11111111e1e
+            e1e111111111eee111111111e1e
+            e1e1111111111e1111111111e1e
+            e1e11111e1e11111e1e11111e1e
+            e1e1111eeeee111eeeee1111e1e
+            e1e11111eee11111eee11111e1e
+            e1e111111e111e111e111111e1e
+            e1e111111111eee111111111e1e
+            e1e11111111eeeee11111111e1e
+            e1e111111111e1e111111111e1e
+            e1e111111e1111111e111111e1e
+            e1e11111eee11111eee11111e1e
+            e1e1111eeeee111eeeee1111e1e
+            e1e11111e1e11111e1e11111e1e
             e1e111111111111111111111e1e
-            e1e111111111111111111111e1e
-            e1e111111111111111111111e1e
-            e1e111111111111111111111e1e
-            e1e111111111111111111111e1e
-            e1e1111111eeeeeee1111111e1e
-            e1e111111eeeeeeeee111111e1e
-            e1e111111eeeeeeeee111111e1e
-            e1e111111eeee11eee111111e1e
-            e1e111111eee111eee111111e1e
-            e1e111111eee11eeee111111e1e
-            e1e111111eeeeeeeee111111e1e
-            e1e111111eeeeeeeee111111e1e
-            e1e1111111eeeeeee1111111e1e
-            e1e111111eeeeeeeee111111e1e
-            e1e11111eeeeeeeeeee11111e1e
-            e1e11111eeeee1eeeee11111e1e
-            e1e11111eeee111eeee11111e1e
-            e1e11111eeee111eeee11111e1e
-            e1e11111eeee111eeee11111e1e
-            e1e11111eeeee1eeeee11111e1e
-            e1e11111eeeeeeeeeee11111e1e
-            e1e111111eeeeeeeee111111e1e
-            e1e1111111eeeeeee1111111e1e
-            e1e111111111111111111111e1e
-            e1e111111111111111111111e1e
-            e1e111111111111111111111e1e
-            e1e111111111111111111111e1e
-            e1e111111111111111111111e1e
-            e1e111111111111111111111e1e
+            e1e111111111111111111e11e1e
+            e1e11111111111111111e1e1e1e
+            e1e111111111111111111e11e1e
+            e1e11111111111111111e1e1e1e
+            e1e111111111111111111e11e1e
             e11e1111111111111111111e11e
             e11ee11111111111111111ee11e
             .e111eeeeeeeeeeeeeeeee111e.
             ..e111111111111111111111e..
             ...eeeeeeeeeeeeeeeeeeeee...
-            `, SpriteKind.Player)
+        `, SpriteKind.Player)
     } else if (card_number == 9) {
         player_card = sprites.create(img`
             ...eeeeeeeeeeeeeeeeeeeee...
@@ -1080,42 +1080,42 @@ function create_card(num2: number) {
                 .e111eeeeeeeeeeeeeeeee111e.
                 e11ee11111111111111111ee11e
                 e11e1111111111111111111e11e
+                e1e11ee11111111111e1e111e1e
+                e1e111e1111111111eeeee11e1e
+                e1e1e1e11111111111eee111e1e
+                e1e11e1111111111111e1111e1e
                 e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e11111111111eeee111111e1e
-                e1e11111111111eeeee11111e1e
-                e1e11111111111eeeee11111e1e
-                e1e11111111111eeeee11111e1e
-                e1e11111111111eeeee11111e1e
-                e1e11111111111eeeee11111e1e
-                e1e11111111111eeeee11111e1e
-                e1e11111111111eeeee11111e1e
-                e1e11111111111eeeee11111e1e
-                e1e11111111111eeeee11111e1e
-                e1e11111111111eeeee11111e1e
-                e1e1111eee1111eeeee11111e1e
-                e1e111eeee111eeeeee11111e1e
-                e1e111eeeee11eeeeee11111e1e
-                e1e111eeeeeeeeeeeee11111e1e
-                e1e1111eeeeeeeeeee111111e1e
-                e1e1111eeeeeeeeeee111111e1e
-                e1e11111eeeeeeeee1111111e1e
-                e1e1111111eeeeee11111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
+                e1e111eeee11111111111111e1e
+                e1e111e311e1111111111111e1e
+                e1e111ed33e1111111111111e1e
+                e1e111ed331e111111111111e1e
+                e1e111edd33e111111111111e1e
+                e1e1111edd31e11111111111e1e
+                e1e1111edd33e11111111111e1e
+                e1e11111edd31e1111111111e1e
+                e1e11111eddd3e1111111111e1e
+                e1e111111edd33e111111111e1e
+                e1e111111eddd3e111111111e1e
+                e1e1111111edd33e11ee1111e1e
+                e1e1111111eddd33ee35e111e1e
+                e1e11111111edd33e35e1111e1e
+                e1e11111111eddde35e11111e1e
+                e1e111111111ede95e111111e1e
+                e1e1111111111e54bbe11111e1e
+                e1e111111111e54cbbe11111e1e
+                e1e11111111e44eccbbe1111e1e
+                e1e111111111ee1eccbe1111e1e
+                e1e111111111111eccce1111e1e
+                e1e1111e11111111eee11e11e1e
+                e1e111eee11111111111e1e1e1e
+                e1e11eeeee1111111111e111e1e
+                e1e111e1e11111111111ee11e1e
                 e11e1111111111111111111e11e
                 e11ee11111111111111111ee11e
                 .e111eeeeeeeeeeeeeeeee111e.
                 ..e111111111111111111111e..
                 ...eeeeeeeeeeeeeeeeeeeee...
-                `, SpriteKind.Player)
+            `, SpriteKind.Player)
         } else if (_10_j_q_k == 2) {
             player_card = sprites.create(img`
                 ...eeeeeeeeeeeeeeeeeeeee...
@@ -1123,42 +1123,42 @@ function create_card(num2: number) {
                 .e111eeeeeeeeeeeeeeeee111e.
                 e11ee11111111111111111ee11e
                 e11e1111111111111111111e11e
+                e1e11ee11111111111e1e111e1e
+                e1e1e11e111111111eeeee11e1e
+                e1e1e11e1111111111eee111e1e
+                e1e11ee111111111111e1111e1e
+                e1e1111e1111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
+                e1e1111111111e1111111111e1e
+                e1e1111111111e1111111111e1e
+                e1e111111111e9e111111111e1e
+                e1e111111111e3e111111111e1e
+                e1e11ee1111e355e1111ee11e1e
+                e1e11e9e111e345e111e9e11e1e
+                e1e111e5e1e35555e1e5e111e1e
+                e1e111e5e1e55555e1e5e111e1e
+                e1e111e45e3554555e54e111e1e
+                e1e1111e555543e5554e1111e1e
+                e1e1111e4555e945554e1111e1e
+                e1e11111e4555e5554e11111e1e
+                e1e11111e433353554e11111e1e
+                e1e11111eeeeeeeeeee11111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111eeeeeee11111111e1e
-                e1e11111eeeeeeeee1111111e1e
-                e1e1111eeeeeeeeeee111111e1e
-                e1e111eeeeeeeeeeeee11111e1e
-                e1e111eeeeee1eeeeee11111e1e
-                e1e111eeeee111eeeee11111e1e
-                e1e111eeeee111eeeee11111e1e
-                e1e111eeeee111eeeee11111e1e
-                e1e111eeeeee1eeeeee11111e1e
-                e1e111eeeeeeeeeeeee11111e1e
-                e1e1111eeeeeeeeeeeee1111e1e
-                e1e11111eeeeeeeeeeee1111e1e
-                e1e111111eeeeeeeeeeee111e1e
-                e1e1111111111111eeeee111e1e
-                e1e111111111111111eee111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
+                e1e1111111111111111e1111e1e
+                e1e1111e111111111111ee11e1e
+                e1e111eee1111111111e11e1e1e
+                e1e11eeeee111111111e11e1e1e
+                e1e111e1e11111111111ee11e1e
                 e11e1111111111111111111e11e
                 e11ee11111111111111111ee11e
                 .e111eeeeeeeeeeeeeeeee111e.
                 ..e111111111111111111111e..
                 ...eeeeeeeeeeeeeeeeeeeee...
-                `, SpriteKind.Player)
+            `, SpriteKind.Player)
         } else if (_10_j_q_k == 3) {
             player_card = sprites.create(img`
                 ...eeeeeeeeeeeeeeeeeeeee...
@@ -1166,42 +1166,42 @@ function create_card(num2: number) {
                 .e111eeeeeeeeeeeeeeeee111e.
                 e11ee11111111111111111ee11e
                 e11e1111111111111111111e11e
+                e1e11e1e1111111111e1e111e1e
+                e1e11ee1111111111eeeee11e1e
+                e1e11e1e1111111111eee111e1e
+                e1e11e1e11111111111e1111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
-                e1e11111eee111111eee1111e1e
-                e1e1111eeeee1111eeeee111e1e
-                e1e1111eeeee11eeeeeee111e1e
-                e1e1111eeeee1eeeeeeee111e1e
+                e1e1111111111e1111111111e1e
+                e1e111111111e9e111111111e1e
+                e1e1111111111e1111111111e1e
+                e1e111111111e3e111111111e1e
+                e1e111e1111e355e1111e111e1e
+                e1e11e3e111e355e111e3e11e1e
+                e1e11e35e1e35554e1e35e11e1e
+                e1e11e555e5553544e355e11e1e
+                e1e11e495e5549e54e594e11e1e
+                e1e11e4454e5e945e4444e11e1e
+                e1e111e455455e554444e111e1e
+                e1e111e4455555555544e111e1e
                 e1e1111eeeeeeeeeeeee1111e1e
-                e1e1111eeeeeeeeeeee11111e1e
-                e1e1111eeeeeeeeeee111111e1e
-                e1e1111eeeeeeeeee1111111e1e
-                e1e1111eeeeeeeee11111111e1e
-                e1e1111eeeeeeee111111111e1e
-                e1e1111eeeeeeee111111111e1e
-                e1e1111eeeeeeeee11111111e1e
-                e1e1111eeeeeeeeee1111111e1e
-                e1e1111eeeeeeeeeeee11111e1e
-                e1e1111eeeeeeeeeeee11111e1e
-                e1e1111eeeee1eeeeeee1111e1e
-                e1e1111eeeee11eeeeee1111e1e
-                e1e1111eeeee111eeeee1111e1e
-                e1e1111eeeee111eeeee1111e1e
-                e1e11111eee11111eee11111e1e
+                e1e1111e44444555555e1111e1e
+                e1e1111eeeeeeeeeeeee1111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
                 e1e111111111111111111111e1e
-                e1e111111111111111111111e1e
+                e1e1111e11111111111e1e11e1e
+                e1e111eee1111111111e1e11e1e
+                e1e11eeeee1111111111ee11e1e
+                e1e111e1e1111111111e1e11e1e
                 e11e1111111111111111111e11e
                 e11ee11111111111111111ee11e
                 .e111eeeeeeeeeeeeeeeee111e.
                 ..e111111111111111111111e..
                 ...eeeeeeeeeeeeeeeeeeeee...
-                `, SpriteKind.Player)
+            `, SpriteKind.Player)
         }
     }
     player_card.setPosition(180, 92)
