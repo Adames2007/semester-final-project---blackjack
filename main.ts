@@ -2,7 +2,7 @@ function create_dealer_card (first: boolean, num: number) {
     if (first == false) {
         card_number = card_number_list[randint(0, 12)]
         if (card_number == 11) {
-            dealer_card = sprites.create(img`
+            dealer_ace = sprites.create(img`
                 ...eeeeeeeeeeeeeeeeeeeee...
                 ..e111111111111111111111e..
                 .e111eeeeeeeeeeeeeeeee111e.
@@ -565,10 +565,10 @@ function create_dealer_card (first: boolean, num: number) {
             }
         }
         dealer_card.setPosition(180, 27)
-        dealer_card.setVelocity(-2000, 0)
+        dealer_card.setVelocity(-2000 + 20 * num, 0)
         pause(200)
         dealer_card.setVelocity(0, 0)
-        dealer_card.setPosition(100, 27)
+        dealer_card.setPosition(80 + 20 * num, 27)
     } else {
         card_number = card_number_list[randint(0, 12)]
         hidden_dealer_card = sprites.create(img`
@@ -615,10 +615,10 @@ function create_dealer_card (first: boolean, num: number) {
             `, SpriteKind.Player)
         if (first) {
             hidden_dealer_card.setPosition(180, 27)
-            hidden_dealer_card.setVelocity(-2000 + 20 * num, 0)
+            hidden_dealer_card.setVelocity(-2000, 0)
             pause(200)
             hidden_dealer_card.setVelocity(0, 0)
-            hidden_dealer_card.setPosition(80 + 20 * num, 27)
+            hidden_dealer_card.setPosition(80, 27)
         }
     }
 }
@@ -629,6 +629,9 @@ function draw_cards () {
     while (game.ask("Draw Card?")) {
         create_card(2 + draws)
         player_sum += card_number
+        if (player_sum > 21 && card_number == 11) {
+            player_sum += -10
+        }
         draws += 1
         if (player_sum > 21) {
             game.splash("BUST!")
@@ -642,7 +645,7 @@ function draw_cards () {
 function create_card (num2: number) {
     card_number = card_number_list[randint(0, 12)]
     if (card_number == 11) {
-        player_card = sprites.create(img`
+        player_ace = sprites.create(img`
             ...eeeeeeeeeeeeeeeeeeeee...
             ..e111111111111111111111e..
             .e111eeeeeeeeeeeeeeeee111e.
@@ -1211,10 +1214,22 @@ function create_card (num2: number) {
     player_card.setPosition(80 + 20 * num2, 92)
 }
 function dealer_draw_cards () {
-    if (dealer_sum < player_sum) {
-        create_dealer_card(false, 2)
-    } else if (dealer_sum == player_sum && dealer_sum < 14) {
-        create_dealer_card(false, 2)
+    while (true) {
+        if (dealer_sum < player_sum || dealer_sum == player_sum && dealer_sum < 12) {
+            create_dealer_card(false, 2 + dealer_draws)
+            dealer_sum += card_number
+            if (dealer_sum > 21 && card_number == 11) {
+                dealer_sum += -10
+            }
+            dealer_draws += 1
+            if (dealer_sum > 21) {
+                game.splash("DEALER BUST!")
+                game.gameOver(true)
+            } else if (dealer_sum == 21) {
+                break;
+            }
+            pause(100)
+        }
     }
 }
 function start_game () {
@@ -1230,11 +1245,13 @@ function start_game () {
         dealer_sum += card_number
         if (player_sum == 21) {
             game.splash("BLACKJACK!")
+        } else {
+            pause(100)
+            draws = 0
+            dealer_draws = 0
+            draw_cards()
+            pause(100)
         }
-        pause(100)
-        draws = 0
-        draw_cards()
-        pause(100)
         animation.runImageAnimation(
         hidden_dealer_card,
         [img`
@@ -1324,7 +1341,7 @@ function start_game () {
         false
         )
         if (dealer_sum == 21) {
-            game.splash("BLACKJACK!")
+            game.splash("DEALER BLACKJACK!")
             game.gameOver(false)
         }
         dealer_draw_cards()
@@ -1338,13 +1355,16 @@ function start_game () {
         }
     }
 }
+let dealer_draws = 0
 let dealer_sum = 0
 let player_card: Sprite = null
+let player_ace: Sprite = null
 let player_sum = 0
 let draws = 0
 let hidden_dealer_card: Sprite = null
 let _10_j_q_k = 0
 let dealer_card: Sprite = null
+let dealer_ace: Sprite = null
 let card_number = 0
 let can_start_game = false
 let card_number_list: number[] = []
